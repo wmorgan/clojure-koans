@@ -9,5 +9,6 @@ if [ "$OSTYPE" = "cygwin" ]; then
 	CLASSPATH=`cygpath -wp $CLASSPATH`
 fi
 
+echo java -cp "$CLASSPATH" clojure.main script/run.clj
 java -cp "$CLASSPATH" clojure.main script/run.clj
 echo
